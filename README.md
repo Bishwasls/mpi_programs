@@ -1,3 +1,7 @@
 # This repo contains my effort to learn parallel programming using MPI.
 
-To run the mpi programs
+To run a sample mpi program "hello_world_mpi.c" on this repo <br/>
+
+$ mpicc hello_world_mpi.c <br/>
+
+$ mpirun -n 6 ./a.out
