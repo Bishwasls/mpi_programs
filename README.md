@@ -27,3 +27,4 @@ mpirun --mca btl '^openib' -n 12 ./a.out > output.txt
 
 echo done
 -----------------------------------------------------
+You can change the partition to normal8cores/normal16cores depending on your need.
