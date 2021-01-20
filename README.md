@@ -27,4 +27,8 @@ mpirun --mca btl '^openib' -n 12 ./a.out > output.txt
 
 echo done
 -----------------------------------------------------
-You can change the partition to normal8cores/normal16cores depending on your need.
+Copy and paste the above script to the file named "slurm_run" and then type
+
+$ sbatch slurm_run
+
+in the terminal. You can change the partition to normal8cores/normal16cores depending on your need.
