@@ -13,14 +13,17 @@ $ mpicc hello_world_mpi.c <br/>
 Use the following slurn script to submit the job <br/>
 
 ------------------------------------------------------
+#!/bin/bash                                                                     
+#SBATCH --nodes=1                                                               
+#SBATCH --ntasks 12                                                             
+#SBATCH --job-name parallel_hello                                               
+#SBATCH --partition=norlal12cores                                               
+#SBATCH --time=0:01:00                                                          
+#SBATCH --output parallel_hello_world.out                                       
 
+module load mpi/openmpi-x86_64
 
+mpirun --mca btl '^openib' -n 12 ./a.out > output.txt
 
-
-
-
-
-
-
-
+echo done
 -----------------------------------------------------
