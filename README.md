@@ -26,7 +26,6 @@ module load mpi/openmpi-x86_64
 mpirun --mca btl '^openib' -n 12 ./a.out > output.txt
 
 echo done
----------
 -----------------------------------------------------
 Copy and paste the above script to the file named "slurm_run" and then type the following in the terminal:
 
