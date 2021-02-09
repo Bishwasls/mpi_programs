@@ -1,4 +1,4 @@
-# This repo contains my effort to learn parallel programming using MPI.
+# This repo contains my effort to learn MPI.
 
 To run a sample mpi program "hello_world_mpi.c" from this repo on a personal machine (laptop/desktop) <br/>
 
@@ -24,11 +24,9 @@ Use the following slurn script to submit the job <br/>
 module load mpi/openmpi-x86_64
 
 mpirun --mca btl '^openib' -n 12 ./a.out > output.txt
-
-echo done
 -----------------------------------------------------
-Copy and paste the above script to the file named "slurm_run" and then type
+Copy and paste the above script to the file named "slurm_run" and then type the following in the terminal:
 
 $ sbatch slurm_run
 
-in the terminal. You can change the partition to normal8cores/normal16cores depending on your need.
+You can change the partition to normal8cores/normal16cores depending on your need.
